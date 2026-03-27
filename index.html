@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Äänestys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div id="auth">
+    <h2>Log in / Sign up</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Log in</button>
+  </div>
+
+  <div id="app" class="hidden">
+    <h2 id="welcome"></h2>
+    <button onclick="logout()">Log Out</button>
+
+    <div id="adminPanel" class="hidden">
+      <h3>Admin Panel</h3>
+      <input id="question" placeholder="Poll Question">
+      <input id="opt1" placeholder="Option 1">
+      <input id="opt2" placeholder="Option 2">
+      <button onclick="createPoll()">Create Poll</button>
+    </div>
+
+    <div id="polls"></div>
+  </div>
+
+</div>
+
+<script src="vote.js"></script>
+</body>
+</html>

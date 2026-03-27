@@ -1,0 +1,40 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background:#f4f4f4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container {
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  width:350px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button {
+  cursor:pointer;
+  background:#2196F3;
+  color:white;
+  border:none;
+}
+
+.hidden { display:none; }
+
+.poll {
+  border:1px solid #ddd;
+  padding:10px;
+  border-radius:8px;
+  margin-top:10px;
+}
