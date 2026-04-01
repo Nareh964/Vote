@@ -59,9 +59,9 @@ function createPoll() {
   const q = document.getElementById('question').value;
   const opt1 = document.getElementById('opt1').value;
   const opt2 = document.getElementById('opt2').value;
-
+// Ensures that the poll question are being filled up
   if (!q || !opt1 || !opt2) return alert('Fill all');
-
+// Saves the vote poll
   polls.push({
     id: Date.now(),
     question: q,
