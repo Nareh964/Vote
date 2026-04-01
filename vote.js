@@ -88,6 +88,7 @@ function vote(pollId, index) {
 
   poll.options[index].votes++;
 
+  // Optimises users name and vote index, shows which option user has voted for
   poll.voters.push({
     username: currentUser.username,
     optionIndex: index
